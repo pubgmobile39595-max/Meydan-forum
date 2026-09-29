@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "username": "blacksroom",
+    "email": "pimarpimar7@gmail.com",
+    "password": "5e81506846d6b72ffd5e293cf7cc1e0ecc46a1bcaaf775e83348b028bb65f207",
+    "bio": "",
+    "location": "",
+    "website": "",
+    "avatar": "",
+    "reputation": 0,
+    "role": "user",
+    "createdAt": "2026-09-29T21:41:18.282Z",
+    "_topics": 0,
+    "_posts": 0,
+    "_followers": 0,
+    "_score": 0,
+    "activeTitle": "yeni"
+  },
+  {
+    "id": 2,
+    "username": "Uytun384848",
+    "email": "globalticaret42@gmail.com",
+    "password": "bae50d89128cc19c608d2dabc3379b2759523b47d68924f5438524dc54ec6747",
+    "bio": "",
+    "location": "",
+    "website": "",
+    "avatar": "",
+    "reputation": 0,
+    "role": "user",
+    "points": 0,
+    "titles": [],
+    "activeTitle": "yeni",
+    "createdAt": "2026-09-29T22:40:24.461Z",
+    "_topics": 0,
+    "_posts": 0,
+    "_followers": 0,
+    "_score": 0,
+    "prefs": {
+      "email": true,
+      "browser": true,
+      "replies": true,
+      "mentions": true,
+      "follows": true
+    }
+  }
+]

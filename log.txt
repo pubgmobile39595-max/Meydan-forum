@@ -1,0 +1,5 @@
+
+  Meydan v2 calisiyor!
+  http://127.0.0.1:8083
+  Admin: http://127.0.0.1:8083/admin  (sifre: meydan2024)
+
