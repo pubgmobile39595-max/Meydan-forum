@@ -9,7 +9,7 @@ const DEFAULTS = {
   logoEmoji: '',
   primaryColor: '#7c3aed',
   secondaryColor: '#6d28d9',
-  adminPassword: 'meydan2024',
+  adminPassword: 'Guvenli2025',
   telegram: '@Cipherteam394',
   telegramUrl: 'https://t.me/Cipherteam394',
   email: 'globalticaret42@gmail.com',

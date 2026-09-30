@@ -137,7 +137,17 @@ app.listen(config.PORT, function() {
   console.log('');
   console.log('  Meydan v2 calisiyor!');
   console.log('  http://127.0.0.1:' + config.PORT);
-  console.log('  Admin: http://127.0.0.1:' + config.PORT + '/admin  (sifre: ' + config.ADMIN_PASS + ')');
+
   console.log('');
 });
 require('./routes-settings')(app, session);
+
+// Render icin: settings.json yoksa otomatik olustur
+const fsInit = require('fs');
+const pathInit = require('path');
+const settingsFileInit = pathInit.join(__dirname, 'settings.json');
+if (!fsInit.existsSync(settingsFileInit)) {
+  const settingsMod = require('./settings');
+  fsInit.writeFileSync(settingsFileInit, JSON.stringify(settingsMod.DEFAULTS, null, 2));
+  console.log('settings.json olusturuldu');
+}
