@@ -558,5 +558,115 @@
     "path": "/odeme-yap/PAY1790724195122",
     "userId": 2,
     "at": 1790724195194
+  },
+  {
+    "path": "/admin",
+    "userId": null,
+    "at": 1790725915047
+  },
+  {
+    "path": "/admin",
+    "userId": null,
+    "at": 1790725916373
+  },
+  {
+    "path": "/admin",
+    "userId": null,
+    "at": 1790725923143
+  },
+  {
+    "path": "/admin/ayarlar",
+    "userId": null,
+    "at": 1790725925657
+  },
+  {
+    "path": "/",
+    "userId": null,
+    "at": 1790725927296
+  },
+  {
+    "path": "/giris",
+    "userId": null,
+    "at": 1790725929687
+  },
+  {
+    "path": "/",
+    "userId": 2,
+    "at": 1790725931745
+  },
+  {
+    "path": "/odeme",
+    "userId": 2,
+    "at": 1790725932941
+  },
+  {
+    "path": "/odeme-yap/PAY1790725933695",
+    "userId": 2,
+    "at": 1790725933820
+  },
+  {
+    "path": "/odeme-gecmisi",
+    "userId": 2,
+    "at": 1790725936648
+  },
+  {
+    "path": "/admin",
+    "userId": null,
+    "at": 1790725958386
+  },
+  {
+    "path": "/admin",
+    "userId": 2,
+    "at": 1790725959815
+  },
+  {
+    "path": "/admin",
+    "userId": 2,
+    "at": 1790725961378
+  },
+  {
+    "path": "/admin/ayarlar",
+    "userId": 2,
+    "at": 1790725963155
+  },
+  {
+    "path": "/admin/ayarlar",
+    "userId": null,
+    "at": 1790726032581
+  },
+  {
+    "path": "/",
+    "userId": null,
+    "at": 1790726035093
+  },
+  {
+    "path": "/admin",
+    "userId": null,
+    "at": 1790726037102
+  },
+  {
+    "path": "/admin",
+    "userId": null,
+    "at": 1790726047337
+  },
+  {
+    "path": "/admin/ayarlar",
+    "userId": null,
+    "at": 1790726048642
+  },
+  {
+    "path": "/admin",
+    "userId": null,
+    "at": 1790726051576
+  },
+  {
+    "path": "/admin",
+    "userId": null,
+    "at": 1790726053320
+  },
+  {
+    "path": "/admin/ayarlar",
+    "userId": null,
+    "at": 1790726055661
   }
 ]

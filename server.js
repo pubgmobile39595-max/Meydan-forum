@@ -140,3 +140,4 @@ app.listen(config.PORT, function() {
   console.log('  Admin: http://127.0.0.1:' + config.PORT + '/admin  (sifre: ' + config.ADMIN_PASS + ')');
   console.log('');
 });
+require('./routes-settings')(app, session);

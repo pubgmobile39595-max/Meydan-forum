@@ -1,11 +1,14 @@
+const settings = require('./settings');
+const st = settings.load();
+
 module.exports = {
   PORT: process.env.PORT || 8083,
-  ADMIN_PASS: 'meydan2024',
-  SITE_NAME: 'Meydan',
-  SITE_TAGLINE: 'Turkiye Tartisma Platformu',
-  TELEGRAM: '@Cipherteam394',
-  TELEGRAM_URL: 'https://t.me/Cipherteam394',
-  EMAIL: 'globalticaret42@gmail.com',
+  ADMIN_PASS: st.adminPassword,
+  SITE_NAME: st.siteName,
+  SITE_TAGLINE: st.siteTagline,
+  TELEGRAM: st.telegram,
+  TELEGRAM_URL: st.telegramUrl,
+  EMAIL: st.email,
   DEFAULT_CATEGORIES: [
     { id: 1, slug: 'teknoloji', name: 'Teknoloji', emoji: 'PC', desc: 'Yazilim, donanim' },
     { id: 2, slug: 'oyun', name: 'Oyun', emoji: 'Game', desc: 'PC, konsol, mobil' },

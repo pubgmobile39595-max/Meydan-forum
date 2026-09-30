@@ -12,7 +12,7 @@ app.get('/admin', function(req, res) {
       '<form method="post" action="/admin/login">' +
       '<div class="field"><label>Sifre</label><input type="password" name="sifre" required autofocus></div>' +
       '<button class="btn full" type="submit">Giris</button></form>' +
-      '<p style="text-align:center;margin-top:16px;font-size:12px;color:#888">Demo: <b>meydan2024</b></p></div>';
+      '</div>';
     return res.send(layout({ title: 'Admin', content: c, s: s }));
   }
   var tab = String(req.query.tab || 'dashboard');
@@ -38,7 +38,8 @@ app.get('/admin', function(req, res) {
   tabs += '<a class="tab ' + (tab === 'log' ? 'on' : '') + '" href="/admin?tab=log">Log</a>';
   tabs += '<a class="tab ' + (tab === 'yedek' ? 'on' : '') + '" href="/admin?tab=yedek">Yedek</a>';
   tabs += '<a class="tab ' + (tab === 'raporlar' ? 'on' : '') + '" href="/admin?tab=raporlar">Raporlar</a>';
-  tabs += '<a class="tab" href="/admin/logout">Cikis</a>';
+  tabs += '<a class="tab" href="/admin/ayarlar">Ayarlar</a>';
+tabs += '<a class="tab" href="/admin/logout">Cikis</a>';
   tabs += '</div>';
 
   var tc = '';

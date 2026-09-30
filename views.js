@@ -1,3 +1,4 @@
+const settings = require('./settings');
 const data = require('./data');
 const theme = require('./theme');
 
@@ -59,16 +60,16 @@ function layout(o) {
   h += '<meta name="viewport" content="width=device-width,initial-scale=1">';
   h += '<meta name="theme-color" content="#7c3aed">';
   h += '<meta name="apple-mobile-web-app-capable" content="yes">';
-  h += '<meta name="apple-mobile-web-app-title" content="Meydan">';
+  h += '<meta name="apple-mobile-web-app-title" content="' + esc(settings.get('siteName')) + '">';
   h += '<link rel="manifest" href="/manifest.json">';
   // GA4 - Google Analytics 4 (olcum kimligi ekleyince aktif olur)
   h += '<script>window.GA_ID="G-XXXXXXXX";</script>';
-  h += '<title>' + esc(o.title) + ' - Meydan</title>';
-  h += '<meta name="description" content="' + esc(o.desc || o.title + ' - Meydan forum') + '">';
+  h += '<title>' + esc(o.title) + ' - ' + esc(settings.get('siteName')) + '</title>';
+  h += '<meta name="description" content="' + esc(o.desc || o.title + ' - ' + settings.get('siteName') + ' forum') + '">';
   h += '<meta name="keywords" content="forum, tartisma, meydan, topluluk, konu, yorum">';
-  h += '<meta name="author" content="Meydan">';
+  h += '<meta name="author" content="' + esc(settings.get('siteName')) + '">';
   h += '<link rel="canonical" href="http://127.0.0.1:8083' + esc(o.canonical || '/') + '">';
-  h += '<meta property="og:site_name" content="Meydan">';
+  h += '<meta property="og:site_name" content="' + esc(settings.get('siteName')) + '">';
   h += '<meta property="og:title" content="' + esc(o.title) + '">';
   h += '<meta property="og:description" content="' + esc(o.desc || o.title) + '">';
   h += '<meta property="og:type" content="' + (o.ogType || 'website') + '">';
@@ -136,7 +137,7 @@ function layout(o) {
   h += '<footer><div class="wrap"><div style="margin-bottom:14px;padding:14px;background:rgba(255,255,255,.05);border-radius:8px"><div style="font-weight:700;color:#fff;margin-bottom:8px">Iletisim</div>' +
     '<a href="https://t.me/Cipherteam394" target="_blank" style="color:#7c3aed;margin-right:16px;font-weight:700">Telegram: @Cipherteam394</a>' +
     '<a href="mailto:globalticaret42@gmail.com" style="color:#7c3aed;font-weight:700">E-posta: globalticaret42@gmail.com</a></div>' +
-    '<div style="margin-bottom:10px"><a href="/hakkimizda" style="color:#aaa;margin:0 10px">Hakkimizda</a><a href="/kurallar" style="color:#aaa;margin:0 10px">Kurallar</a><a href="/gizlilik" style="color:#aaa;margin:0 10px">Gizlilik</a><a href="/sss" style="color:#aaa;margin:0 10px">SSS</a><a href="/istatistikler" style="color:#aaa;margin:0 10px">Istatistik</a></div>Meydan - Turkiye Tartisma Platformu</div></footer>';
+    '<div style="margin-bottom:10px"><a href="/hakkimizda" style="color:#aaa;margin:0 10px">Hakkimizda</a><a href="/kurallar" style="color:#aaa;margin:0 10px">Kurallar</a><a href="/gizlilik" style="color:#aaa;margin:0 10px">Gizlilik</a><a href="/sss" style="color:#aaa;margin:0 10px">SSS</a><a href="/istatistikler" style="color:#aaa;margin:0 10px">Istatistik</a></div>' + esc(settings.get('footerText')) + '</div></footer>';
   h += '<script>function requestNotify(){if(!("Notification" in window))return;if(Notification.permission==="granted")return;Notification.requestPermission();}' +
   'function showToast(msg){var d=document.createElement("div");d.textContent=msg;d.style.cssText="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#7c3aed;color:#fff;padding:12px 24px;border-radius:8px;font-weight:700;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,.2)";document.body.appendChild(d);setTimeout(function(){d.remove();},2500);}' +
   'if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("/service-worker.js").catch(function(){});});}' +
